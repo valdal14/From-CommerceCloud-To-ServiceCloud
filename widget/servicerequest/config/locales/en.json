@@ -1,0 +1,12 @@
+{
+    "resources" :{
+        "serviceCloudEnvUrlLabel" : "Service Cloud URL instance",
+        "serviceCloudEnvUrlHelpText": "URL of your Service Cloud Instance (i.e. https://rnowgse00793.rightnowdemo.com)",
+        "serviceCloudUsernameLabel" : "Username",
+        "serviceCloudUsernameHelpText": "Username of the Service Cloud instance (i.e. Admin1)",
+        "serviceCloudPasswordLabel": "Password",
+        "serviceCloudPasswordHelpText": "Username's password",
+        "serviceCloudUserIDLabel": "User ID",
+        "serviceCloudUserIDHelpText": "ID of the chosen Service Cloud username (i.e. 2)"
+    }
+}

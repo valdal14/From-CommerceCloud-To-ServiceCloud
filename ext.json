@@ -1,0 +1,9 @@
+{
+    "extensionID": "8defeb5d-e958-4cb7-be7c-e28a37ec995d",
+    "developerID": "12345678",
+    "createdBy": "Valerio D'Alessio",
+    "name": "servicerequest",
+    "version": 1,
+    "timeCreated": "2018-03-01",
+    "description": "Open a service request to Oracle Service Cloud"
+  }

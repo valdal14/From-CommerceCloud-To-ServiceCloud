@@ -1,0 +1,15 @@
+{
+    "name": "servicerequest",
+    "version": 1,
+    "global": false,
+    "javascript": "widget-servicerequest-js",
+    "pageTypes": ["home"],
+    "imports": ["product"],
+    "jsEditable": true,
+    "config": {
+        "serviceCloudEnvUrl": "",
+        "serviceCloudUsername": "",
+        "serviceCloudPassword": "",
+        "serviceCloudUserID": ""
+    }
+  }

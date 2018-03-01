@@ -1,0 +1,53 @@
+<!-- ko if: user().loggedIn -->
+<!-- Button trigger modal -->
+<button type="button" id="modalbutton" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+  Open a Service Request
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- Customer Logo Image URL -->
+        <img src="./file/general/logo_supremo_business.png" alt="Supremo">
+      </div>
+      <div class="modal-body">
+
+        <div class="form-group" id="form">
+          <label for="customerText">Ticket Subject</label>
+          <input type="text" class="form-control" id="customerText" value="" placeholder="Write the subject of your service request">
+        </div>
+        
+        <div id="resultMessage">
+            <label>Oracle Service Cloud Response:</label>
+            <p>Your new request has been opened with id <span class="reqId"></span></p>
+            <p>Reference number: <span class="reqRefNum"></span></p>
+        </div>
+        
+        <div id="errorMessage">
+            <label>Oracle Service Cloud Response:</label>
+            <p>There was an error: <span class="error"></span></p>
+        </div>
+        
+        <div id="spinner" style="display: none;">
+            <img src="./file/general/spinner.gif" alt="loading" id="spinnerImg">
+        </div>
+
+        <!-- Service Cloud Instance Details -->
+            <input type="hidden" class="form-control" id="serviceCloudEnvUrl" data-bind="value: serviceCloudEnvUrl">
+            <input type="hidden" class="form-control" id="serviceCloudUsername" data-bind="value: serviceCloudUsername">
+            <input type="hidden" class="form-control" id="serviceCloudPassword" data-bind="value: serviceCloudPassword">
+            <input type="hidden" class="form-control" id="serviceCloudUserID" data-bind="value: serviceCloudUserID">
+        <!-- ############################## -->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success" id="sendMessage" data-bind="onRender: clickSendMessageEvent">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /ko -->
+

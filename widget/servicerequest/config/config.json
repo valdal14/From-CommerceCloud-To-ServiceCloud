@@ -1,0 +1,37 @@
+{
+    "widgetDescriptorName": "servicerequest",
+    "properties": [
+        {
+            "id": "serviceCloudEnvUrl",
+            "type": "stringType",
+            "name": "serviceCloudEnvUrl",
+            "labelResourceId": "serviceCloudEnvUrlLabel",
+            "helpTextResourceId": "serviceCloudEnvUrlHelpText",
+            "required": true
+        },
+        {
+            "id": "serviceCloudUsername",
+            "type": "stringType",
+            "name": "serviceCloudUsername",
+            "labelResourceId": "serviceCloudUsernameLabel",
+            "helpTextResourceId": "serviceCloudUsernameHelpText",
+            "required": true
+        },
+        {
+            "id": "serviceCloudPassword",
+            "type": "stringType",
+            "name": "serviceCloudPassword",
+            "labelResourceId": "serviceCloudPasswordLabel",
+            "helpTextResourceId": "serviceCloudPasswordHelpText",
+            "required": true
+        },
+        {
+            "id": "serviceCloudUserID",
+            "type": "stringType",
+            "name": "serviceCloudUserID",
+            "labelResourceId": "serviceCloudUserIDLabel",
+            "helpTextResourceId": "serviceCloudUserIDHelpText",
+            "required": true
+        }
+    ]
+}
